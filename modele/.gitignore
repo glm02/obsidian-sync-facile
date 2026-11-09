@@ -1,0 +1,25 @@
+# Réglages Obsidian : chacun garde les siens (thème, fenêtres ouvertes).
+.obsidian/
+.trash/
+
+# Fichiers temporaires des services de synchronisation
+.tmp.driveupload/
+.tmp.drivedownload/
+.dropbox
+.dropbox.attr
+
+# Secrets : ne doivent jamais arriver sur GitHub
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+secrets*.json
+*.local.json
+
+# Fichiers temporaires d'Office et du système
+~$*
+.~lock.*
+Thumbs.db
+desktop.ini
+.DS_Store

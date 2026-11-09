@@ -1,0 +1,25 @@
+# Notes : si deux personnes modifient le même endroit, on garde les deux versions
+# à la suite, plutôt qu'un conflit bloquant. Rien n'est perdu, il reste à faire le tri.
+*.md text eol=lf merge=union
+
+# Toiles Obsidian : mélanger deux versions casserait le fichier
+*.canvas -merge
+
+# Scripts : chaque système a besoin de ses fins de ligne
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.command text eol=lf
+
+# Fichiers binaires : impossibles à fusionner
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.mp3 binary
+*.mp4 binary
+*.zip binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
